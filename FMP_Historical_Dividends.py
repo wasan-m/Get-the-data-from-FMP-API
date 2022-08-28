@@ -13,11 +13,9 @@ url = (
     + API_key
 )
 
-
 def get_api_result(url):
     r = requests.get(url)
     return json.loads(r.text)
-
 
 # Create dataframe 1
 jl = get_api_result(url)
