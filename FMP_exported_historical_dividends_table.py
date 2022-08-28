@@ -9,8 +9,6 @@ db = mysql.connector.connect(
     host=fs.host, port=fs.port, user=fs.user, password=fs.password, database=fs.database
 )
 
-cursor = db.cursor()
-
 # Export historical_dividends table
 cursor = db.cursor()
 sql = """
