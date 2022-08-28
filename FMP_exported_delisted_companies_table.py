@@ -26,7 +26,16 @@ for p in delisted_companies:
 # Excel
 workbook = Workbook()
 sheet = workbook.active
-sheet.append(["ID", " symbol", "companyName", "dex", "ipoDate", "delistedDate"])
+sheet.append(
+    [
+        "ID", 
+        " symbol", 
+        "companyName", 
+        "dex", 
+        "ipoDate", 
+        "delistedDate"
+    ]
+)
 
 for p in delisted_companies:
     print(p)
